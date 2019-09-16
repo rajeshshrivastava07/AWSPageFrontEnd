@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta http-equiv="Access-Control-Allow-Headers" content="*" />
+		<title>Rajesh's AWS Sandbox</title>
+	</head>
+<body class="card-panel">
+	<div class="container">
+    <div>
+        <h4>This page is hosted on AWS S3 bucket. </h4>
+        <p> This is static portion of the page</p>
+    </div>
+
+    <!-- <div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="hello.js"></script>
+    </div> 
+
+	
+	<p id="hardCodedResponse"></p>
+
+	<script>
+		//var responseFromRestApi = '{"message":"Your name is RajeshShrivastava","id":1}';
+		//obj = JSON.parse(responseFromRestApi);
+		//document.getElementById("hardCodedResponse").innerHTML =
+		//obj.message + " " + obj.id;
+	</script>
+    
+	------------>
+	
+
+ <div class="row">
+  
+	<div> 
+      <h4> This section fetches information from back end services </h4>
+      <!--p id="message1-id"> </p -->
+	  <p> A Springboot Web application is deployed using Elastic Beanstalk on a EC2 server. Requests are reaching EC2 via load balancer. Following is the response from first API. </p>
+      <p id="message1-content" class="card-panel grey" width="fit-content"> </p>
+	</div>
+	
+	<div> 
+      <!--p id="message2-id"> </p -->
+	  <p>Similar response from the second Springboot Web application. This App is also deployed on a separate EC2, similar to the first one. </p>
+      <p id="message2-content" class="card-panel grey" width="fit-content"> </p>
+	</div> 
+	  
+	  <button id ="button1" class="button" value = "Refresh Prices!" onclick="refreshPrices();">Refresh Prices!</button>
+	  <!--a id ="anchor1" value = "Refresh Prices!" onclick="refreshPrices();" href="">Refresh Prices!</a -->
+  </div>
+ </div>
+
+ 
+  
+</body>
+
+<footer> </footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script src="hello.js"></script>
+	  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="myapp.css">
+	 <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+
+</html>
